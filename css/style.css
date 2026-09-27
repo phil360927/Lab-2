@@ -1,1 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f5f0;
+}
+
+header {
+    background-color: #dfe7df;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    color: #4f6554;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+}
+
+.bio-hero {
+    background-color: #ece8df;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fffdf8;
+    flex-basis: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #dfe7df;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .card-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-basis: 30%;
+    }
+}
 
